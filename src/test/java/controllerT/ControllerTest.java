@@ -30,7 +30,7 @@ public class ControllerTest {
         User2Controller user2Controller = new User2Controller(user2service);
         User2 existingUser = new User2("priya", "poojavg333@gmail.com", 908765489);
         User2 newUser = new User2("ppp", "pds", 89067534);
-        Mockito.when(user2service.findUser2PhoneNumber(908765489)).thenReturn(null);
+        Mockito.when(user2service.findUser2PhoneNumber(908765489)).thenReturn(existingUser);
 
         ResponseEntity<User2> entity = user2Controller.updatePhoneNumber(newUser, 908765489);
 

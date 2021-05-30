@@ -1,0 +1,6 @@
+app\WebConfig.class
+domain\User2.class
+user2Repository\User2Repository.class
+user2Controller\User2Controller.class
+user2service\User2service.class
+app\Application.class

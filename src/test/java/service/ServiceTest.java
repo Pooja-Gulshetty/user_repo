@@ -39,8 +39,7 @@ public class ServiceTest {
         User2service user2service = new User2service(user2Repository);
         User2 user2 = new User2("pooja", "piuyte", 973196488);
         user2service.delete(user2);
-        Mockito.verify(user2Repository, Mockito.times(1)).save(user2);
-
+        Mockito.verify(user2Repository, Mockito.times(1)).delete(user2);
     }
 
     @Test
